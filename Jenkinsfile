@@ -73,8 +73,8 @@ pipeline{
             }
         }
         stage('Python to Jfrog'){
-         agent { docker { image 'python:3.11.5-alpine3.18' } }
-         when { beforeAgent true expression {  params.action == 'create' } }
+         //agent { docker { image 'python:3.11.5-alpine3.18' } }
+         when { expression {  params.action == 'create' } }
             steps{
                script{
                    
