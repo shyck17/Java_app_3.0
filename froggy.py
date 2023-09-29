@@ -3,7 +3,7 @@ import requests
 def transfer():
     #print('heello')
     mavenpath=' /home/ubuntu/Java_app_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
-    jfrogpath=' http://13.52.211.102:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
+    jfrogpath=' http://54.67.77.123/:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
     username = 'admin'
     password ='test123' 
 
