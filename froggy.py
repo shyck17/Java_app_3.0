@@ -5,7 +5,7 @@ def transfer():
     mavenpath=' /home/ubuntu/Java_app_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
     jfrogpath=' http://18.144.23.229:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
     username = 'admin'
-    password ='test123' 
+    password ='Jfrog123$' 
 
     with open (mavenpath,'rb') as mpath:
         res=requests.put(jfrogpath,auth=(username,password),data=mpath)
