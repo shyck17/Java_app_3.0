@@ -1,7 +1,7 @@
 import requests
 
 def transfer():
-    print('heello')
+    #print('heello')
     mavenpath=' /home/ubuntu/Java_app_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
     jfrogpath=' http://13.52.211.102:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
     username = 'admin'
@@ -17,7 +17,7 @@ def transfer():
 
 def main():
     transfer()
-    print('Hello')
+    #print('Hello')
 
 if __name__ == '__main__':
     main()
