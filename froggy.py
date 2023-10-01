@@ -4,7 +4,7 @@ def transfer():
     #print('heello')
     #mavenpath=' /home/ubuntu/Java_app_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
     mavenpath=' /var/lib/jenkins/workspace/jksdemo/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar' 
-    jfrogpath=' http://18.144.23.229:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
+    jfrogpath=' http://54.153.59.120/:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar '
     username = 'admin'
     password ='Jfrog123$' 
 
