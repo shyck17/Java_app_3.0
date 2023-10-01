@@ -31,6 +31,9 @@ pipeline{
                script{
                    
                    mvnTest()
+                   sh 'whoami'
+                   sh'env'
+                   sh'ls -l /var/lib/jenkins/workspace/jfrogdemo/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
                }
             }
         }
