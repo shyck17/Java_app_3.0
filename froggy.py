@@ -1,5 +1,6 @@
 import requests
 import os 
+import stat
 
 def transfer():
     #print('heello')
