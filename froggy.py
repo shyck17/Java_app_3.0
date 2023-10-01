@@ -1,6 +1,6 @@
 import requests
-#import os 
-#import stat
+import os 
+import stat
 
 def transfer():
     #print('heello')
@@ -9,7 +9,7 @@ def transfer():
     jfrogpath='http://54.153.59.120/:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
     username = 'admin'
     password ='Jfrog123$' 
-    #os.chmod(mavenpath, stat.S_IXUSR)
+    os.chmod(mavenpath, stat.S_IROTH|stat.S_IWOTH|stat.S_IXOTH)
     with open (mavenpath,'rb') as mpath:
         res=requests.put(jfrogpath,auth=(username,password),data=mpath)
 
